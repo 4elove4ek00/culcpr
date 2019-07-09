@@ -18,20 +18,21 @@ namespace WindowsFormsApp1
 
         }
 
+
         void Culculator(object sender, EventArgs e)
         {
             try
             {
                 double firstArgument = Convert.ToDouble(FirstElement.Text);
                 double secondArgument = Convert.ToDouble(SecondElement.Text);
-                ITwoArgumentsCalculator culculator = Factory.CreateCalculator(((Button) sender).Name);
-                double result = calculator.Calculater(firstArgument, secondArgument);
-                ResultTextBox.Text = result.ToString();
+                ITwoArgumentsCalculator culculator = TwoArgumentsFactory.CreateCalculator(((Button) sender).Name);
+                double result = culculator.Culculate(firstArgument, secondArgument);
+                Conclusion.Text = result.ToString();
             }
             catch
             {
-                firstArgumentTextBox.Text = "";
-                secondArgumentTextBox.Text = "";
+                FirstElement.Text = "";
+                SecondElement.Text = "";
             }
         }
 
@@ -54,6 +55,11 @@ namespace WindowsFormsApp1
 
         private void Multiplication_Click(object sender, EventArgs e)
         {
+        }
+
+        private void SecondElement_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

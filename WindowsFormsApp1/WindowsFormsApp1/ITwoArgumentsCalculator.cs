@@ -8,6 +8,6 @@ namespace WindowsFormsApp1
 {
     public interface ITwoArgumentsCalculator
     {
-
+        double Culculate(double firstArgument, double secondArgument);
     }
 }

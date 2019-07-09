@@ -10,7 +10,7 @@ namespace WindowsFormsApp1
     {
         public double Culculate(double FirstElement, double SecondElement)
         {
-            double result = FirstElement / SecondElement;
+            double result = FirstElement - SecondElement;
             return result;
         }
     }
