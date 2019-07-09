@@ -15,16 +15,48 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
 
         }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
 
+
+        }
+
+
+        private void Addition_Click(object sender, EventArgs e)
+        {
+            double firstArgument = Convert.ToDouble(FirstElement.Text);
+            double secondArgument = Convert.ToDouble(SecondElement.Text);
+            double result = firstArgument + secondArgument;
+            Conclusion.Text = result.ToString();
+        }
+
+        private void Division_Click(object sender, EventArgs e)
+        {
+            double firstArgument = Convert.ToDouble(FirstElement.Text);
+            double secondArgument = Convert.ToDouble(SecondElement.Text);
+            double result = firstArgument / secondArgument;
+            Conclusion.Text = result.ToString();
+        }
+
+        private void Substraction_Click(object sender, EventArgs e)
+        {
+            double firstArgument = Convert.ToDouble(FirstElement.Text);
+            double secondArgument = Convert.ToDouble(SecondElement.Text);
+            double result = firstArgument - secondArgument;
+            Conclusion.Text = result.ToString();
+        }
+
+        private void Multiplication_Click(object sender, EventArgs e)
+        {
+            double firstArgument = Convert.ToDouble(FirstElement.Text);
+            double secondArgument = Convert.ToDouble(SecondElement.Text);
+            double result = firstArgument * secondArgument;
+            Conclusion.Text = result.ToString();
         }
     }
 }

@@ -28,87 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MULT = new System.Windows.Forms.Button();
-            this.DIV = new System.Windows.Forms.Button();
-            this.SUM = new System.Windows.Forms.Button();
-            this.SUBT = new System.Windows.Forms.Button();
-            this.Conc = new System.Windows.Forms.Label();
-            this.Firstel = new System.Windows.Forms.TextBox();
-            this.Secondel = new System.Windows.Forms.TextBox();
+            this.Multiplication = new System.Windows.Forms.Button();
+            this.Division = new System.Windows.Forms.Button();
+            this.Addition = new System.Windows.Forms.Button();
+            this.Subtraction = new System.Windows.Forms.Button();
+            this.Conclusion = new System.Windows.Forms.Label();
+            this.FirstElement = new System.Windows.Forms.TextBox();
+            this.SecondElement = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // MULT
+            // Multiplication
             // 
-            this.MULT.Location = new System.Drawing.Point(124, 206);
-            this.MULT.Name = "MULT";
-            this.MULT.Size = new System.Drawing.Size(75, 23);
-            this.MULT.TabIndex = 0;
-            this.MULT.Text = "*";
-            this.MULT.UseVisualStyleBackColor = true;
+            this.Multiplication.Location = new System.Drawing.Point(124, 206);
+            this.Multiplication.Name = "Multiplication";
+            this.Multiplication.Size = new System.Drawing.Size(75, 23);
+            this.Multiplication.TabIndex = 0;
+            this.Multiplication.Text = "*";
+            this.Multiplication.UseVisualStyleBackColor = true;
+            this.Multiplication.Click += new System.EventHandler(this.Multiplication_Click);
             // 
-            // DIV
+            // Division
             // 
-            this.DIV.Location = new System.Drawing.Point(248, 206);
-            this.DIV.Name = "DIV";
-            this.DIV.Size = new System.Drawing.Size(75, 23);
-            this.DIV.TabIndex = 1;
-            this.DIV.Text = "/";
-            this.DIV.UseVisualStyleBackColor = true;
-            this.DIV.Click += new System.EventHandler(this.button2_Click);
+            this.Division.Location = new System.Drawing.Point(248, 206);
+            this.Division.Name = "Division";
+            this.Division.Size = new System.Drawing.Size(75, 23);
+            this.Division.TabIndex = 1;
+            this.Division.Text = "/";
+            this.Division.UseVisualStyleBackColor = true;
+            this.Division.Click += new System.EventHandler(this.Division_Click);
             // 
-            // SUM
+            // Addition
             // 
-            this.SUM.Location = new System.Drawing.Point(124, 139);
-            this.SUM.Name = "SUM";
-            this.SUM.Size = new System.Drawing.Size(75, 23);
-            this.SUM.TabIndex = 2;
-            this.SUM.Text = "+";
-            this.SUM.UseVisualStyleBackColor = true;
+            this.Addition.Location = new System.Drawing.Point(124, 139);
+            this.Addition.Name = "Addition";
+            this.Addition.Size = new System.Drawing.Size(75, 23);
+            this.Addition.TabIndex = 2;
+            this.Addition.Text = "+";
+            this.Addition.UseVisualStyleBackColor = true;
+            this.Addition.Click += new System.EventHandler(this.Addition_Click);
             // 
-            // SUBT
+            // Subtraction
             // 
-            this.SUBT.Location = new System.Drawing.Point(248, 139);
-            this.SUBT.Name = "SUBT";
-            this.SUBT.Size = new System.Drawing.Size(75, 23);
-            this.SUBT.TabIndex = 3;
-            this.SUBT.Text = "-";
-            this.SUBT.UseVisualStyleBackColor = true;
+            this.Subtraction.Location = new System.Drawing.Point(248, 139);
+            this.Subtraction.Name = "Subtraction";
+            this.Subtraction.Size = new System.Drawing.Size(75, 23);
+            this.Subtraction.TabIndex = 3;
+            this.Subtraction.Text = "-";
+            this.Subtraction.UseVisualStyleBackColor = true;
+            this.Subtraction.Click += new System.EventHandler(this.Substraction_Click);
             // 
-            // Conc
+            // Conclusion
             // 
-            this.Conc.AutoSize = true;
-            this.Conc.Location = new System.Drawing.Point(400, 69);
-            this.Conc.Name = "Conc";
-            this.Conc.Size = new System.Drawing.Size(35, 13);
-            this.Conc.TabIndex = 4;
-            this.Conc.Text = "label1";
+            this.Conclusion.AutoSize = true;
+            this.Conclusion.Location = new System.Drawing.Point(400, 69);
+            this.Conclusion.Name = "Conclusion";
+            this.Conclusion.Size = new System.Drawing.Size(35, 13);
+            this.Conclusion.TabIndex = 4;
+            this.Conclusion.Text = "label1";
             // 
-            // Firstel
+            // FirstElement
             // 
-            this.Firstel.Location = new System.Drawing.Point(114, 62);
-            this.Firstel.Name = "Firstel";
-            this.Firstel.Size = new System.Drawing.Size(100, 20);
-            this.Firstel.TabIndex = 5;
+            this.FirstElement.Location = new System.Drawing.Point(114, 62);
+            this.FirstElement.Name = "FirstElement";
+            this.FirstElement.Size = new System.Drawing.Size(100, 20);
+            this.FirstElement.TabIndex = 5;
             // 
-            // Secondel
+            // SecondElement
             // 
-            this.Secondel.Location = new System.Drawing.Point(248, 62);
-            this.Secondel.Name = "Secondel";
-            this.Secondel.Size = new System.Drawing.Size(100, 20);
-            this.Secondel.TabIndex = 6;
+            this.SecondElement.Location = new System.Drawing.Point(248, 62);
+            this.SecondElement.Name = "SecondElement";
+            this.SecondElement.Size = new System.Drawing.Size(100, 20);
+            this.SecondElement.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Secondel);
-            this.Controls.Add(this.Firstel);
-            this.Controls.Add(this.Conc);
-            this.Controls.Add(this.SUBT);
-            this.Controls.Add(this.SUM);
-            this.Controls.Add(this.DIV);
-            this.Controls.Add(this.MULT);
+            this.Controls.Add(this.SecondElement);
+            this.Controls.Add(this.FirstElement);
+            this.Controls.Add(this.Conclusion);
+            this.Controls.Add(this.Subtraction);
+            this.Controls.Add(this.Addition);
+            this.Controls.Add(this.Division);
+            this.Controls.Add(this.Multiplication);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -119,13 +122,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button MULT;
-        private System.Windows.Forms.Button DIV;
-        private System.Windows.Forms.Button SUM;
-        private System.Windows.Forms.Button SUBT;
-        private System.Windows.Forms.Label Conc;
-        private System.Windows.Forms.TextBox Firstel;
-        private System.Windows.Forms.TextBox Secondel;
+        private System.Windows.Forms.Button Multiplication;
+        private System.Windows.Forms.Button Division;
+        private System.Windows.Forms.Button Addition;
+        private System.Windows.Forms.Button Subtraction;
+        private System.Windows.Forms.Label Conclusion;
+        private System.Windows.Forms.TextBox FirstElement;
+        private System.Windows.Forms.TextBox SecondElement;
     }
 }
 
