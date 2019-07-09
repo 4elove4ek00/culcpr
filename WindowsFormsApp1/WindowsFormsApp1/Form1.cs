@@ -18,31 +18,21 @@ namespace WindowsFormsApp1
 
         }
 
-        private void Culculator(object sender, EventArgs e)
+        void Culculator(object sender, EventArgs e)
         {
-            double firstArgument = Convert.ToDouble(FirstElement.Text);
-            double secondArgument = Convert.ToDouble(SecondElement.Text);
-            double result;
-            switch (((Button)sender).Name)
-
+            try
             {
-                case "Addition":
-                    result = firstArgument + secondArgument;
-                    break;
-                case "Division":
-                    result = firstArgument / secondArgument;
-                    break;
-                case "Subtraction":
-                    result = firstArgument - secondArgument;
-                    break;
-                case "Multiplication":
-                      result = firstArgument * secondArgument;
-                    break;
-                default:
-                    throw new Exception("Неизвестная операция");
+                double firstArgument = Convert.ToDouble(FirstElement.Text);
+                double secondArgument = Convert.ToDouble(SecondElement.Text);
+                ITwoArgumentsCalculator culculator = Factory.CreateCalculator(((Button) sender).Name);
+                double result = calculator.Calculater(firstArgument, secondArgument);
+                ResultTextBox.Text = result.ToString();
             }
-
-            Conclusion.Text = result.ToString();
+            catch
+            {
+                firstArgumentTextBox.Text = "";
+                secondArgumentTextBox.Text = "";
+            }
         }
 
 
