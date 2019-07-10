@@ -37,6 +37,16 @@
             this.SecondElement = new System.Windows.Forms.TextBox();
             this.squaring = new System.Windows.Forms.Button();
             this.root = new System.Windows.Forms.Button();
+            this.sin = new System.Windows.Forms.Button();
+            this.tan = new System.Windows.Forms.Button();
+            this.ln = new System.Windows.Forms.Button();
+            this.divisionByElement = new System.Windows.Forms.Button();
+            this.cos = new System.Windows.Forms.Button();
+            this.Average = new System.Windows.Forms.Button();
+            this.Remainder = new System.Windows.Forms.Button();
+            this.fractionation = new System.Windows.Forms.Button();
+            this.max = new System.Windows.Forms.Button();
+            this.tenInDegree = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Multiplication
@@ -51,7 +61,7 @@
             // 
             // Division
             // 
-            this.Division.Location = new System.Drawing.Point(248, 206);
+            this.Division.Location = new System.Drawing.Point(205, 206);
             this.Division.Name = "Division";
             this.Division.Size = new System.Drawing.Size(75, 23);
             this.Division.TabIndex = 1;
@@ -71,7 +81,7 @@
             // 
             // Subtraction
             // 
-            this.Subtraction.Location = new System.Drawing.Point(248, 139);
+            this.Subtraction.Location = new System.Drawing.Point(205, 139);
             this.Subtraction.Name = "Subtraction";
             this.Subtraction.Size = new System.Drawing.Size(75, 23);
             this.Subtraction.TabIndex = 3;
@@ -98,14 +108,14 @@
             // 
             // SecondElement
             // 
-            this.SecondElement.Location = new System.Drawing.Point(248, 62);
+            this.SecondElement.Location = new System.Drawing.Point(220, 62);
             this.SecondElement.Name = "SecondElement";
             this.SecondElement.Size = new System.Drawing.Size(100, 20);
             this.SecondElement.TabIndex = 6;
             // 
             // squaring
             // 
-            this.squaring.Location = new System.Drawing.Point(360, 139);
+            this.squaring.Location = new System.Drawing.Point(286, 139);
             this.squaring.Name = "squaring";
             this.squaring.Size = new System.Drawing.Size(75, 23);
             this.squaring.TabIndex = 7;
@@ -115,7 +125,7 @@
             // 
             // root
             // 
-            this.root.Location = new System.Drawing.Point(360, 206);
+            this.root.Location = new System.Drawing.Point(286, 206);
             this.root.Name = "root";
             this.root.Size = new System.Drawing.Size(75, 23);
             this.root.TabIndex = 8;
@@ -123,11 +133,126 @@
             this.root.UseVisualStyleBackColor = true;
             this.root.Click += new System.EventHandler(this.OneCalculator);
             // 
+            // sin
+            // 
+            this.sin.Location = new System.Drawing.Point(529, 69);
+            this.sin.Name = "sin";
+            this.sin.Size = new System.Drawing.Size(75, 23);
+            this.sin.TabIndex = 9;
+            this.sin.Text = "Sin";
+            this.sin.UseVisualStyleBackColor = true;
+            this.sin.Click += new System.EventHandler(this.OneCalculator);
+            // 
+            // tan
+            // 
+            this.tan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.tan.Location = new System.Drawing.Point(529, 98);
+            this.tan.Name = "tan";
+            this.tan.Size = new System.Drawing.Size(75, 23);
+            this.tan.TabIndex = 10;
+            this.tan.Text = "Tan";
+            this.tan.UseCompatibleTextRendering = true;
+            this.tan.UseVisualStyleBackColor = true;
+            this.tan.Click += new System.EventHandler(this.OneCalculator);
+            // 
+            // ln
+            // 
+            this.ln.Location = new System.Drawing.Point(610, 98);
+            this.ln.Name = "ln";
+            this.ln.Size = new System.Drawing.Size(75, 23);
+            this.ln.TabIndex = 11;
+            this.ln.Text = "Ln";
+            this.ln.UseVisualStyleBackColor = true;
+            this.ln.Click += new System.EventHandler(this.OneCalculator);
+            // 
+            // divisionByElement
+            // 
+            this.divisionByElement.Location = new System.Drawing.Point(529, 127);
+            this.divisionByElement.Name = "divisionByElement";
+            this.divisionByElement.Size = new System.Drawing.Size(75, 23);
+            this.divisionByElement.TabIndex = 12;
+            this.divisionByElement.Text = "1/x";
+            this.divisionByElement.UseVisualStyleBackColor = true;
+            this.divisionByElement.Click += new System.EventHandler(this.OneCalculator);
+            // 
+            // cos
+            // 
+            this.cos.Location = new System.Drawing.Point(610, 69);
+            this.cos.Name = "cos";
+            this.cos.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cos.Size = new System.Drawing.Size(75, 23);
+            this.cos.TabIndex = 13;
+            this.cos.Text = "Cos";
+            this.cos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.cos.UseVisualStyleBackColor = true;
+            this.cos.Click += new System.EventHandler(this.OneCalculator);
+            // 
+            // Average
+            // 
+            this.Average.Location = new System.Drawing.Point(610, 127);
+            this.Average.Name = "Average";
+            this.Average.Size = new System.Drawing.Size(75, 23);
+            this.Average.TabIndex = 14;
+            this.Average.Text = "(x+y)/2";
+            this.Average.UseVisualStyleBackColor = true;
+            this.Average.Click += new System.EventHandler(this.Calculator);
+            // 
+            // Remainder
+            // 
+            this.Remainder.Location = new System.Drawing.Point(529, 156);
+            this.Remainder.Name = "Remainder";
+            this.Remainder.Size = new System.Drawing.Size(75, 23);
+            this.Remainder.TabIndex = 15;
+            this.Remainder.Text = "remainder";
+            this.Remainder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.Remainder.UseVisualStyleBackColor = true;
+            this.Remainder.Click += new System.EventHandler(this.Calculator);
+            // 
+            // fractionation
+            // 
+            this.fractionation.Location = new System.Drawing.Point(610, 156);
+            this.fractionation.Name = "fractionation";
+            this.fractionation.Size = new System.Drawing.Size(75, 23);
+            this.fractionation.TabIndex = 16;
+            this.fractionation.Text = "x^(1/y)";
+            this.fractionation.UseVisualStyleBackColor = true;
+            this.fractionation.Click += new System.EventHandler(this.Calculator);
+            // 
+            // max
+            // 
+            this.max.Location = new System.Drawing.Point(529, 185);
+            this.max.Name = "max";
+            this.max.Size = new System.Drawing.Size(75, 23);
+            this.max.TabIndex = 17;
+            this.max.Text = "Max";
+            this.max.UseVisualStyleBackColor = true;
+            this.max.Click += new System.EventHandler(this.Calculator);
+            // 
+            // tenInDegree
+            // 
+            this.tenInDegree.Location = new System.Drawing.Point(610, 185);
+            this.tenInDegree.Name = "tenInDegree";
+            this.tenInDegree.Size = new System.Drawing.Size(75, 23);
+            this.tenInDegree.TabIndex = 18;
+            this.tenInDegree.Text = "10^x";
+            this.tenInDegree.UseVisualStyleBackColor = true;
+            this.tenInDegree.Click += new System.EventHandler(this.OneCalculator);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tenInDegree);
+            this.Controls.Add(this.max);
+            this.Controls.Add(this.fractionation);
+            this.Controls.Add(this.Remainder);
+            this.Controls.Add(this.Average);
+            this.Controls.Add(this.cos);
+            this.Controls.Add(this.divisionByElement);
+            this.Controls.Add(this.ln);
+            this.Controls.Add(this.tan);
+            this.Controls.Add(this.sin);
             this.Controls.Add(this.root);
             this.Controls.Add(this.squaring);
             this.Controls.Add(this.SecondElement);
@@ -156,6 +281,16 @@
         private System.Windows.Forms.TextBox SecondElement;
         private System.Windows.Forms.Button squaring;
         private System.Windows.Forms.Button root;
+        private System.Windows.Forms.Button sin;
+        private System.Windows.Forms.Button tan;
+        private System.Windows.Forms.Button ln;
+        private System.Windows.Forms.Button divisionByElement;
+        private System.Windows.Forms.Button cos;
+        private System.Windows.Forms.Button Average;
+        private System.Windows.Forms.Button Remainder;
+        private System.Windows.Forms.Button fractionation;
+        private System.Windows.Forms.Button max;
+        private System.Windows.Forms.Button tenInDegree;
     }
 }
 

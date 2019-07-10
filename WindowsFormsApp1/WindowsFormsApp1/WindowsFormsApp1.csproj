@@ -46,24 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Addition.cs" />
-    <Compile Include="IoneArgument.cs" />
-    <Compile Include="OneArgumentsFactory.cs" />
-    <Compile Include="Root.cs" />
-    <Compile Include="Division.cs" />
+    <Compile Include="Class\Addition.cs" />
+    <Compile Include="Class\Average.cs" />
+    <Compile Include="Class\DivisionByElement.cs" />
+    <Compile Include="Class\Fractionation.cs" />
+    <Compile Include="Class\Ln.cs" />
+    <Compile Include="Class\Cos.cs" />
+    <Compile Include="Class\Max.cs" />
+    <Compile Include="Class\Remainder.cs" />
+    <Compile Include="Class\Sin.cs" />
+    <Compile Include="Class\Tan.cs" />
+    <Compile Include="Class\TenInDegree.cs" />
+    <Compile Include="Interfaces\IoneArgument.cs" />
+    <Compile Include="Factorys\OneArgumentsFactory.cs" />
+    <Compile Include="Class\Root.cs" />
+    <Compile Include="Class\Division.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ITwoArgumentsCalculator.cs" />
-    <Compile Include="Multiplication.cs" />
+    <Compile Include="Interfaces\ITwoArgumentsCalculator.cs" />
+    <Compile Include="Class\Multiplication.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Squring.cs" />
-    <Compile Include="Subtraction.cs" />
-    <Compile Include="TwoArgumentsFactory.cs" />
+    <Compile Include="Class\Squring.cs" />
+    <Compile Include="Class\Subtraction.cs" />
+    <Compile Include="Factorys\TwoArgumentsFactory.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,5 +99,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
