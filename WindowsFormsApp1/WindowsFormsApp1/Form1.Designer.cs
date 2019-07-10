@@ -47,11 +47,21 @@
             this.fractionation = new System.Windows.Forms.Button();
             this.max = new System.Windows.Forms.Button();
             this.tenInDegree = new System.Windows.Forms.Button();
+            this.module = new System.Windows.Forms.Button();
+            this.arcsin = new System.Windows.Forms.Button();
+            this.arccos = new System.Windows.Forms.Button();
+            this.arctg = new System.Windows.Forms.Button();
+            this.negatively = new System.Windows.Forms.Button();
+            this.min = new System.Windows.Forms.Button();
+            this.geometricMean = new System.Windows.Forms.Button();
+            this.exponentiation = new System.Windows.Forms.Button();
+            this.log = new System.Windows.Forms.Button();
+            this.IntegerDivision = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Multiplication
             // 
-            this.Multiplication.Location = new System.Drawing.Point(124, 206);
+            this.Multiplication.Location = new System.Drawing.Point(124, 185);
             this.Multiplication.Name = "Multiplication";
             this.Multiplication.Size = new System.Drawing.Size(75, 23);
             this.Multiplication.TabIndex = 0;
@@ -61,7 +71,7 @@
             // 
             // Division
             // 
-            this.Division.Location = new System.Drawing.Point(205, 206);
+            this.Division.Location = new System.Drawing.Point(205, 185);
             this.Division.Name = "Division";
             this.Division.Size = new System.Drawing.Size(75, 23);
             this.Division.TabIndex = 1;
@@ -125,7 +135,7 @@
             // 
             // root
             // 
-            this.root.Location = new System.Drawing.Point(286, 206);
+            this.root.Location = new System.Drawing.Point(286, 185);
             this.root.Name = "root";
             this.root.Size = new System.Drawing.Size(75, 23);
             this.root.TabIndex = 8;
@@ -238,11 +248,123 @@
             this.tenInDegree.UseVisualStyleBackColor = true;
             this.tenInDegree.Click += new System.EventHandler(this.OneCalculator);
             // 
+            // module
+            // 
+            this.module.Location = new System.Drawing.Point(43, 304);
+            this.module.Name = "module";
+            this.module.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.module.Size = new System.Drawing.Size(75, 23);
+            this.module.TabIndex = 19;
+            this.module.Text = "|x|";
+            this.module.UseVisualStyleBackColor = true;
+            this.module.Click += new System.EventHandler(this.OneCalculator);
+            // 
+            // arcsin
+            // 
+            this.arcsin.Location = new System.Drawing.Point(124, 304);
+            this.arcsin.Name = "arcsin";
+            this.arcsin.Size = new System.Drawing.Size(75, 23);
+            this.arcsin.TabIndex = 20;
+            this.arcsin.Text = "Arcsin(x)";
+            this.arcsin.UseVisualStyleBackColor = true;
+            this.arcsin.Click += new System.EventHandler(this.OneCalculator);
+            // 
+            // arccos
+            // 
+            this.arccos.Location = new System.Drawing.Point(233, 304);
+            this.arccos.Name = "arccos";
+            this.arccos.Size = new System.Drawing.Size(75, 23);
+            this.arccos.TabIndex = 21;
+            this.arccos.Text = "Arccos(x)";
+            this.arccos.UseVisualStyleBackColor = true;
+            this.arccos.Click += new System.EventHandler(this.OneCalculator);
+            // 
+            // arctg
+            // 
+            this.arctg.Location = new System.Drawing.Point(314, 304);
+            this.arctg.Name = "arctg";
+            this.arctg.Size = new System.Drawing.Size(75, 23);
+            this.arctg.TabIndex = 22;
+            this.arctg.Text = "Arctg(x)";
+            this.arctg.UseVisualStyleBackColor = true;
+            this.arctg.Click += new System.EventHandler(this.OneCalculator);
+            // 
+            // negatively
+            // 
+            this.negatively.Location = new System.Drawing.Point(395, 304);
+            this.negatively.Name = "negatively";
+            this.negatively.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.negatively.Size = new System.Drawing.Size(75, 23);
+            this.negatively.TabIndex = 23;
+            this.negatively.Text = "-x";
+            this.negatively.UseVisualStyleBackColor = true;
+            this.negatively.Click += new System.EventHandler(this.OneCalculator);
+            // 
+            // min
+            // 
+            this.min.Location = new System.Drawing.Point(43, 345);
+            this.min.Name = "min";
+            this.min.Size = new System.Drawing.Size(75, 23);
+            this.min.TabIndex = 24;
+            this.min.Text = "Min";
+            this.min.UseVisualStyleBackColor = true;
+            this.min.Click += new System.EventHandler(this.Calculator);
+            // 
+            // geometricMean
+            // 
+            this.geometricMean.Location = new System.Drawing.Point(124, 345);
+            this.geometricMean.Name = "geometricMean";
+            this.geometricMean.Size = new System.Drawing.Size(103, 23);
+            this.geometricMean.TabIndex = 25;
+            this.geometricMean.Text = "Geometric mean";
+            this.geometricMean.UseVisualStyleBackColor = true;
+            this.geometricMean.Click += new System.EventHandler(this.Calculator);
+            // 
+            // exponentiation
+            // 
+            this.exponentiation.Location = new System.Drawing.Point(233, 345);
+            this.exponentiation.Name = "exponentiation";
+            this.exponentiation.Size = new System.Drawing.Size(75, 23);
+            this.exponentiation.TabIndex = 26;
+            this.exponentiation.Text = "x^y";
+            this.exponentiation.UseVisualStyleBackColor = true;
+            this.exponentiation.Click += new System.EventHandler(this.Calculator);
+            // 
+            // log
+            // 
+            this.log.Location = new System.Drawing.Point(314, 345);
+            this.log.Name = "log";
+            this.log.Size = new System.Drawing.Size(75, 23);
+            this.log.TabIndex = 27;
+            this.log.Text = "Logx(y)";
+            this.log.UseVisualStyleBackColor = true;
+            this.log.Click += new System.EventHandler(this.Calculator);
+            // 
+            // IntegerDivision
+            // 
+            this.IntegerDivision.Location = new System.Drawing.Point(395, 345);
+            this.IntegerDivision.Name = "IntegerDivision";
+            this.IntegerDivision.Size = new System.Drawing.Size(104, 23);
+            this.IntegerDivision.TabIndex = 28;
+            this.IntegerDivision.Text = "Integer division";
+            this.IntegerDivision.UseVisualStyleBackColor = true;
+            this.IntegerDivision.Click += new System.EventHandler(this.Calculator);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.IntegerDivision);
+            this.Controls.Add(this.log);
+            this.Controls.Add(this.exponentiation);
+            this.Controls.Add(this.geometricMean);
+            this.Controls.Add(this.min);
+            this.Controls.Add(this.negatively);
+            this.Controls.Add(this.arctg);
+            this.Controls.Add(this.arccos);
+            this.Controls.Add(this.arcsin);
+            this.Controls.Add(this.module);
             this.Controls.Add(this.tenInDegree);
             this.Controls.Add(this.max);
             this.Controls.Add(this.fractionation);
@@ -265,6 +387,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Click += new System.EventHandler(this.OneCalculator);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,6 +414,16 @@
         private System.Windows.Forms.Button fractionation;
         private System.Windows.Forms.Button max;
         private System.Windows.Forms.Button tenInDegree;
+        private System.Windows.Forms.Button module;
+        private System.Windows.Forms.Button arcsin;
+        private System.Windows.Forms.Button arccos;
+        private System.Windows.Forms.Button arctg;
+        private System.Windows.Forms.Button negatively;
+        private System.Windows.Forms.Button min;
+        private System.Windows.Forms.Button geometricMean;
+        private System.Windows.Forms.Button exponentiation;
+        private System.Windows.Forms.Button log;
+        private System.Windows.Forms.Button IntegerDivision;
     }
 }
 

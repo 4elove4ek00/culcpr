@@ -36,6 +36,17 @@ namespace WindowsFormsApp1
                 case
                     "max":
                     return new Max();
+                case
+                    "min":
+                    return new Min();
+                case "geometricMean":
+                    return new GeometricMean();
+                case "exponentiation":
+                    return new Exponentiation();
+                case "log":
+                    return new Log();
+                case "IntegerDivision":
+                    return new IntegerDivision();
                 default:
                     throw new Exception("Неизвестная ошибка");
             }

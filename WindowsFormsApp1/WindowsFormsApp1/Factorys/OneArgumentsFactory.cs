@@ -36,6 +36,21 @@ namespace WindowsFormsApp1
                 case
                     "tenInDegree":
                     return new TenInDegree();
+                case
+                    "module":
+                    return new Module();
+                case
+                    "arcsin":
+                    return new Arcsin();
+                case
+                    "arccos":
+                    return new Arccos();
+                case
+                    "arctg":
+                    return new Arctg();
+                case "negatively":
+                    return new Negatively();
+
                 default:
                     throw new Exception("Неизвестная ошибка");
             }
