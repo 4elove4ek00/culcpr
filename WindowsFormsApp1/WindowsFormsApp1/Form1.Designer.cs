@@ -427,7 +427,8 @@
             this.Controls.Add(this.Division);
             this.Controls.Add(this.Multiplication);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculator";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.OneCalculator);
             this.ResumeLayout(false);
