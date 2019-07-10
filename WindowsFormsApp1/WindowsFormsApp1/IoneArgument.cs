@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    public interface ITwoArgumentsCalculator
+    public interface IoneArgument
     {
-        double Calculate(double firstArgument, double secondArgument);
+        double OneCalculate(double firstArgument);
     }
 }

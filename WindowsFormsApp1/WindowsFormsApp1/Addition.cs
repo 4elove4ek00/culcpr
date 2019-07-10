@@ -9,7 +9,7 @@ namespace WindowsFormsApp1
     public class Addition: ITwoArgumentsCalculator
 
     {
-        public double Culculate(double FirstElement, double SecondElement)
+        public double Calculate(double FirstElement, double SecondElement)
         {
             double result = FirstElement + SecondElement;
             return result;

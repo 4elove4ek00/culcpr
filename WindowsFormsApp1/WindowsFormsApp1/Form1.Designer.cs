@@ -35,6 +35,8 @@
             this.Conclusion = new System.Windows.Forms.Label();
             this.FirstElement = new System.Windows.Forms.TextBox();
             this.SecondElement = new System.Windows.Forms.TextBox();
+            this.squaring = new System.Windows.Forms.Button();
+            this.root = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Multiplication
@@ -45,7 +47,7 @@
             this.Multiplication.TabIndex = 0;
             this.Multiplication.Text = "*";
             this.Multiplication.UseVisualStyleBackColor = true;
-            this.Multiplication.Click += new System.EventHandler(this.Culculator);
+            this.Multiplication.Click += new System.EventHandler(this.Calculator);
             // 
             // Division
             // 
@@ -55,7 +57,7 @@
             this.Division.TabIndex = 1;
             this.Division.Text = "/";
             this.Division.UseVisualStyleBackColor = true;
-            this.Division.Click += new System.EventHandler(this.Culculator);
+            this.Division.Click += new System.EventHandler(this.Calculator);
             // 
             // Addition
             // 
@@ -65,7 +67,7 @@
             this.Addition.TabIndex = 2;
             this.Addition.Text = "+";
             this.Addition.UseVisualStyleBackColor = true;
-            this.Addition.Click += new System.EventHandler(this.Culculator);
+            this.Addition.Click += new System.EventHandler(this.Calculator);
             // 
             // Subtraction
             // 
@@ -75,16 +77,17 @@
             this.Subtraction.TabIndex = 3;
             this.Subtraction.Text = "-";
             this.Subtraction.UseVisualStyleBackColor = true;
-            this.Subtraction.Click += new System.EventHandler(this.Culculator);
+            this.Subtraction.Click += new System.EventHandler(this.Calculator);
             // 
             // Conclusion
             // 
             this.Conclusion.AutoSize = true;
             this.Conclusion.Location = new System.Drawing.Point(400, 69);
             this.Conclusion.Name = "Conclusion";
-            this.Conclusion.Size = new System.Drawing.Size(35, 13);
+            this.Conclusion.Size = new System.Drawing.Size(13, 13);
             this.Conclusion.TabIndex = 4;
-            this.Conclusion.Text = "label1";
+            this.Conclusion.Text = "0";
+            this.Conclusion.Click += new System.EventHandler(this.Conclusion_Click);
             // 
             // FirstElement
             // 
@@ -100,11 +103,33 @@
             this.SecondElement.Size = new System.Drawing.Size(100, 20);
             this.SecondElement.TabIndex = 6;
             // 
+            // squaring
+            // 
+            this.squaring.Location = new System.Drawing.Point(360, 139);
+            this.squaring.Name = "squaring";
+            this.squaring.Size = new System.Drawing.Size(75, 23);
+            this.squaring.TabIndex = 7;
+            this.squaring.Text = "^2";
+            this.squaring.UseVisualStyleBackColor = true;
+            this.squaring.Click += new System.EventHandler(this.OneCalculator);
+            // 
+            // root
+            // 
+            this.root.Location = new System.Drawing.Point(360, 206);
+            this.root.Name = "root";
+            this.root.Size = new System.Drawing.Size(75, 23);
+            this.root.TabIndex = 8;
+            this.root.Text = "√";
+            this.root.UseVisualStyleBackColor = true;
+            this.root.Click += new System.EventHandler(this.OneCalculator);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.root);
+            this.Controls.Add(this.squaring);
             this.Controls.Add(this.SecondElement);
             this.Controls.Add(this.FirstElement);
             this.Controls.Add(this.Conclusion);
@@ -129,6 +154,8 @@
         private System.Windows.Forms.Label Conclusion;
         private System.Windows.Forms.TextBox FirstElement;
         private System.Windows.Forms.TextBox SecondElement;
+        private System.Windows.Forms.Button squaring;
+        private System.Windows.Forms.Button root;
     }
 }
 

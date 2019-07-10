@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-   public class Multiplication : ITwoArgumentsCalculator
+    public class Root : IoneArgument
     {
-        public double Calculate(double FirstElement, double SecondElement)
+        public double OneCalculate(double FirstElement)
         {
-            double result = FirstElement * SecondElement;
+            double result = Math.Sqrt(FirstElement);
             return result;
         }
     }
