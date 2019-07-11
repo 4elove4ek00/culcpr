@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Calcpr
 {
     /// <summary>
-    /// Interface for working with two arguments
+    /// It`s interface
     /// </summary>
     public interface ITwoArgumentsCalculator
     {
