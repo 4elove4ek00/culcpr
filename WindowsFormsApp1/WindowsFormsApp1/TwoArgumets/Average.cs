@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calcpr
+namespace Calcpr.Class
 {
-    public class Addition: ITwoArgumentsCalculator
-
+    
+   public class Average : ITwoArgumentsCalculator
     {
         /// <summary>
-        /// this method add together two arguments
+        /// It`s search medium math
         /// </summary>
-        /// <param name="firstValue"></param>
-        /// <param name="secondValue"></param>
+        /// <param name="FirstElement">First number</param>
+        /// <param name="SecondElement">Second number</param>
         /// <returns></returns>
         public double Calculate(double FirstElement, double SecondElement)
         {
-            double result = FirstElement + SecondElement;
+            double result = (FirstElement + SecondElement) / 2; 
             return result;
         }
     }

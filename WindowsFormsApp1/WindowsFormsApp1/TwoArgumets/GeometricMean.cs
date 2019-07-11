@@ -4,21 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calcpr
+namespace Calcpr.Class
 {
-    public class Addition: ITwoArgumentsCalculator
 
+    public class GeometricMean : ITwoArgumentsCalculator
     {
         /// <summary>
-        /// this method add together two arguments
+        /// this method find geometric mean of two arguments
         /// </summary>
         /// <param name="firstValue"></param>
         /// <param name="secondValue"></param>
         /// <returns></returns>
         public double Calculate(double FirstElement, double SecondElement)
         {
-            double result = FirstElement + SecondElement;
-            return result;
+            if(FirstElement * SecondElement<0) throw new Exception("отрицательное значение под корнем ");
+            return Math.Sqrt(FirstElement * SecondElement);
         }
     }
 }

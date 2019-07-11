@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace Calcpr
 {
     /// <summary>
-    /// Interface for working with two arguments
+    /// Interface for working with one argument
     /// </summary>
-    public interface ITwoArgumentsCalculator
+    public interface IoneArgument
     {
-        double Calculate(double firstArgument, double secondArgument);
+        double OneCalculate(double firstArgument);
     }
 }

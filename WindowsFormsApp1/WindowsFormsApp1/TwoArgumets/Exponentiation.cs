@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calcpr
+namespace Calcpr.Class
 {
-    public class Addition: ITwoArgumentsCalculator
-
+    
+    public class Exponentiation : ITwoArgumentsCalculator
     {
         /// <summary>
-        /// this method add together two arguments
+        /// It`s search pow 2 numbers
         /// </summary>
-        /// <param name="firstValue"></param>
-        /// <param name="secondValue"></param>
+        /// <param name="FirstElement">First number</param>
+        /// <param name="SecondElement">Second number</param>
         /// <returns></returns>
         public double Calculate(double FirstElement, double SecondElement)
         {
-            double result = FirstElement + SecondElement;
+            double result = Math.Pow(FirstElement, SecondElement);
             return result;
         }
     }

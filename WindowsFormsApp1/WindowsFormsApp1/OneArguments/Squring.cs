@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 
 namespace Calcpr
 {
-    public class Addition: ITwoArgumentsCalculator
-
+    public class Squring : IoneArgument
     {
         /// <summary>
-        /// this method add together two arguments
+        /// this method squaring argument
         /// </summary>
         /// <param name="firstValue"></param>
-        /// <param name="secondValue"></param>
         /// <returns></returns>
-        public double Calculate(double FirstElement, double SecondElement)
+        public double OneCalculate(double FirstElement)
         {
-            double result = FirstElement + SecondElement;
+            double result = FirstElement * FirstElement;
             return result;
         }
     }

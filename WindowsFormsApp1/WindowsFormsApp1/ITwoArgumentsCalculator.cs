@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calcpr
+namespace WindowsFormsApp1
 {
-    /// <summary>
-    /// Interface for working with two arguments
-    /// </summary>
     public interface ITwoArgumentsCalculator
     {
-        double Calculate(double firstArgument, double secondArgument);
+        double Culculate(double firstArgument, double secondArgument);
     }
 }
