@@ -10,7 +10,7 @@ namespace Calcpr.Class
     {
         public double OneCalculate(double FirstElement)
         {
-            if (FirstElement == 0) throw new Exception("Неизвестная ошибка");
+            if (FirstElement == 0) throw new Exception("Делить на ноль нельзя!");
             double result = 1 / (FirstElement);
             return result;
         }

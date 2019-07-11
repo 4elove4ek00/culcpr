@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace Calcpr
 {
+    /// <summary>
+    /// It`s subtraction class
+    /// </summary>
     public class Subtraction : ITwoArgumentsCalculator
-    {
+    { /// <summary>
+    /// It`s search subtraction 2 numbers.
+    /// </summary>
+    /// <param name="FirstElement">It`s first number</param>
+    /// <param name="SecondElement">It`s second number</param>
+    /// <returns></returns>
         public double Calculate(double FirstElement, double SecondElement)
         {
             double result = FirstElement - SecondElement;

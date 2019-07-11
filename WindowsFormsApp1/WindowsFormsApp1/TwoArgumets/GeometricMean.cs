@@ -11,7 +11,7 @@ namespace Calcpr.Class
     {
         public double Calculate(double FirstElement, double SecondElement)
         {
-            if(FirstElement * SecondElement<0) throw new Exception("Неизвестная ошибка");
+            if(FirstElement * SecondElement<0) throw new Exception("отрицательное значение под корнем ");
             return Math.Sqrt(FirstElement * SecondElement);
         }
     }

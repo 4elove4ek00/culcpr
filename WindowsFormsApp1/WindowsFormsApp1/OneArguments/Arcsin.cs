@@ -10,7 +10,7 @@ namespace Calcpr.Class
     {
         public double OneCalculate(double FirstElement)
         {
-            if ((FirstElement < (-1)) || (FirstElement > 1)) throw new Exception("Неизвестная ошибка");
+            if ((FirstElement < (-1)) || (FirstElement > 1)) throw new Exception("выход за область допустимых значений");
             return Math.Asin(FirstElement);
         }
     }

@@ -10,7 +10,7 @@ namespace Calcpr.Class
     {
         public double OneCalculate(double FirstElement)
         {
-            if (FirstElement == 3.14 ) throw new Exception("Неизвестная ошибка");
+            if (FirstElement == 3.14 ) throw new Exception("недопустимое значение ");
             return Math.Tan(FirstElement); ;
         }
     }

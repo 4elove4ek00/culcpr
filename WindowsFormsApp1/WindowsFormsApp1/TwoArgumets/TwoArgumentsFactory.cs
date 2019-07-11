@@ -7,12 +7,12 @@ using Calcpr.Class;
 
 namespace Calcpr
 {
-   public class TwoArgumentsFactory
+    public class TwoArgumentsFactory
     {
         public static ITwoArgumentsCalculator CreateCalculator(string sender)
         {
-            switch(sender)
-                {
+            switch (sender)
+            {
                 case "Addition":
                     return new Addition();
                 case

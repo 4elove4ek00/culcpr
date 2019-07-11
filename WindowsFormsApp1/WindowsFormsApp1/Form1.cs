@@ -29,10 +29,14 @@ namespace Calcpr
                 double result = calculator.Calculate(firstArgument, secondArgument);
                 Conclusion.Text = result.ToString();
             }
-            catch(FormatException exception)
+            catch (FormatException exception)
             {
                 FirstElement.Text = "";
                 SecondElement.Text = "";
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
             }
         }
 
@@ -49,6 +53,10 @@ namespace Calcpr
             {
 
                 FirstElement.Text = "";
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
             }
         }
 
