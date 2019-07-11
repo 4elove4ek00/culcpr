@@ -3,22 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WindowsFormsApp1;
 using NUnit.Framework;
 
-namespace Calculator.Tests.Factorys
+namespace Calculator.Tests.Tests
 {
     [TestFixture]
-    public class SquringTest
+    public class MultiplicationTest
     {
         [Test]
         public void WindowsFormsApp1()
         {
-            var calculator = new WindowsFormsApp1.Squring();
-            var actual = calculator.OneCalculate(9);
-            Assert.AreEqual(3, actual);
+            var calculator = new WindowsFormsApp1.Multiplication();
+            var actual = calculator.Calculate(9, 3);
+            Assert.AreEqual(27, actual);
         }
     }
 }
-
-

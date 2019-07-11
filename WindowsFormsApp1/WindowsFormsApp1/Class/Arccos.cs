@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Class
 {
-    class Arccos : IoneArgument
+    public class Arccos : IoneArgument
     {
         public double OneCalculate(double FirstElement)
         {

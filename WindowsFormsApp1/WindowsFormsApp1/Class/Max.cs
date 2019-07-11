@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Class
 {
-    class Max : ITwoArgumentsCalculator
+    public class Max : ITwoArgumentsCalculator
     {
         public double Calculate(double FirstElement, double SecondElement)
         {

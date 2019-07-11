@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Class
 {
-    class Arcsin:IoneArgument
+    public class Arcsin:IoneArgument
     {
         public double OneCalculate(double FirstElement)
         {
