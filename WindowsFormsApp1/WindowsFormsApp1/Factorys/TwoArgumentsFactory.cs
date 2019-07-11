@@ -7,7 +7,7 @@ using WindowsFormsApp1.Class;
 
 namespace WindowsFormsApp1
 {
-    class TwoArgumentsFactory
+   public class TwoArgumentsFactory
     {
         public static ITwoArgumentsCalculator CreateCalculator(string sender)
         {

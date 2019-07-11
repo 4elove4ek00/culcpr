@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FactoryTests\OneArgumentsFactoryTests.cs" />
+    <Compile Include="FactoryTests\TwoArgumentsFactoryTests.cs" />
     <Compile Include="Tests\AdditionTest.cs" />
     <Compile Include="Tests\ArccosTests.cs" />
     <Compile Include="Tests\ArcSinTests.cs" />
