@@ -11,11 +11,17 @@ namespace Calculator.Tests.Tests
     public class RootTest
     {
         [Test]
-        public void WindowsFormsApp1()
+        public void Calcpr()
         {
-            var calculator = new WindowsFormsApp1.Root();
+            var calculator = new Calcpr.Root();
             var actual = calculator.OneCalculate(9);
             Assert.AreEqual(3, actual);
+        }
+        [Test]
+        public void Exception()
+        {
+            var calculator = new Calcpr.Root();
+            Assert.Throws<Exception>(() => calculator.OneCalculate(-10));
         }
     }
 }

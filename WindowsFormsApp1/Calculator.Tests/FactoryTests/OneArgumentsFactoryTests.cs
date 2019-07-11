@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WindowsFormsApp1;
-using WindowsFormsApp1.Class;
+using Calcpr;
+using Calcpr.Class;
 using NUnit.Framework;
 
 namespace Calculator.Tests.FactoryTests
@@ -24,7 +24,7 @@ namespace Calculator.Tests.FactoryTests
         [TestCase("arccos", typeof(Arccos))]
         [TestCase("arctg", typeof(Arctg))]
         [TestCase("negatively", typeof(Negatively))]
-        public void WindowsFormsApp1(
+        public void Calcpr(
             string name,
             Type type)
         {

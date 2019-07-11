@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WindowsFormsApp1;
+using Calcpr;
 using NUnit.Framework;
 
 namespace Calculator.Tests.Tests
@@ -13,9 +13,9 @@ namespace Calculator.Tests.Tests
     public class SquringTest
     {
         [Test]
-        public void WindowsFormsApp1()
+        public void Calcpr()
         {
-            var calculator = new WindowsFormsApp1.Squring();
+            var calculator = new Calcpr.Squring();
             var actual = calculator.OneCalculate(9);
             Assert.AreEqual(81, actual);
         }

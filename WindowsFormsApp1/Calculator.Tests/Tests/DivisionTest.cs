@@ -12,9 +12,9 @@ namespace Calculator.Tests.Tests
     public class DivisionTest
     {
         [Test]
-        public void WindowsFormsApp1()
+        public void Calcpr()
         {
-            var calculator = new WindowsFormsApp1.Division();
+            var calculator = new Calcpr.Division();
             var actual = calculator.Calculate(9,3);
             Assert.AreEqual(3, actual);
         }

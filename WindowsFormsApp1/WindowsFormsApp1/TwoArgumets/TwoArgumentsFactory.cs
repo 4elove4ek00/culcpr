@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WindowsFormsApp1.Class;
+using Calcpr.Class;
 
-namespace WindowsFormsApp1
+namespace Calcpr
 {
    public class TwoArgumentsFactory
     {

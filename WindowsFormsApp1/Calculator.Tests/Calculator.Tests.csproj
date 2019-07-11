@@ -79,9 +79,9 @@
     <Compile Include="Tests\TenInDegreeTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WindowsFormsApp1\WindowsFormsApp1.csproj">
+    <ProjectReference Include="..\WindowsFormsApp1\Calcpr.csproj">
       <Project>{6eff486d-039f-4e25-ba3f-433c8e110342}</Project>
-      <Name>WindowsFormsApp1</Name>
+      <Name>Calcpr</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

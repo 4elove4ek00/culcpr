@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{6EFF486D-039F-4E25-BA3F-433C8E110342}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calcpr", "WindowsFormsApp1\Calcpr.csproj", "{6EFF486D-039F-4E25-BA3F-433C8E110342}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Tests", "Calculator.Tests\Calculator.Tests.csproj", "{2BC5BC5A-3564-4A31-BF44-40D07230EE3A}"
 EndProject

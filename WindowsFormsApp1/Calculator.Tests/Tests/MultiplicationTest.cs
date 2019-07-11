@@ -11,9 +11,9 @@ namespace Calculator.Tests.Tests
     public class MultiplicationTest
     {
         [Test]
-        public void WindowsFormsApp1()
+        public void Calcpr()
         {
-            var calculator = new WindowsFormsApp1.Multiplication();
+            var calculator = new Calcpr.Multiplication();
             var actual = calculator.Calculate(9, 3);
             Assert.AreEqual(27, actual);
         }

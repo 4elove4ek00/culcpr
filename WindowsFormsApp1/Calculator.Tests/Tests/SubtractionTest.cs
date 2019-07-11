@@ -11,9 +11,9 @@ namespace Calculator.Tests.Tests
     public class SubstractionTest
     {
         [Test]
-        public void WindowsFormsApp1()
+        public void Calcpr()
         {
-            var calculator = new WindowsFormsApp1.Subtraction();
+            var calculator = new Calcpr.Subtraction();
             var actual = calculator.Calculate(9, 3);
             Assert.AreEqual(6, actual);
         }

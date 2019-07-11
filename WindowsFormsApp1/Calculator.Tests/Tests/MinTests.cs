@@ -13,12 +13,12 @@ namespace Calculator.Tests.Tests
         [TestCase(60, 30, 30)]
         [TestCase(90, 30, 30)]
         [TestCase(10, 40, 10)]
-        public void WindowsFormsApp1(
+        public void Calcpr(
             double FirstElement,
             double SecondElement,
             double expected)
         {
-            var calculator = new WindowsFormsApp1.Class.Min();
+            var calculator = new Calcpr.Class.Min();
             var actualResult = calculator.Calculate(FirstElement, SecondElement);
             Assert.AreEqual(expected, actualResult);
         }

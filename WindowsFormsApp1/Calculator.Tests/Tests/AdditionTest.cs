@@ -11,9 +11,9 @@ namespace Calculator.Tests.Tests
     public class AdditionTest
     {
         [Test]
-        public void WindowsFormsApp1()
+        public void Calcpr()
         {
-            var calculator = new WindowsFormsApp1.Addition();
+            var calculator = new Calcpr.Addition();
             var actual = calculator.Calculate(9, 3);
             Assert.AreEqual(12, actual);
         }

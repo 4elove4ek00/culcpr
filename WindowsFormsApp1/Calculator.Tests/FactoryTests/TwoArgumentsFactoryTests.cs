@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WindowsFormsApp1;
-using WindowsFormsApp1.Class;
+using Calcpr;
+using Calcpr.Class;
 using NUnit.Framework;
 
 namespace Calculator.Tests.FactoryTests
@@ -24,7 +24,7 @@ namespace Calculator.Tests.FactoryTests
         [TestCase("exponentiation", typeof(Exponentiation))]
         [TestCase("log", typeof(Log))]
         [TestCase("IntegerDivision", typeof(IntegerDivision))]
-        public void WindowsFormsApp1(
+        public void Calcpr(
             string name,
             Type type)
         {

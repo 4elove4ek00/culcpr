@@ -17,16 +17,15 @@ namespace Calculator.Tests.Tests
             double FirstElement,
             double expected)
         {
-            var calculator = new WindowsFormsApp1.Class.Arccos();
+            var calculator = new Calcpr.Class.Arccos();
             var actualResult = calculator.OneCalculate(FirstElement);
             Assert.AreEqual(expected, actualResult,0.01);
         }
 
         [Test]
-        public void WindowsFormsApp1()
+        public void Exception()
         {
-            var calculator = new WindowsFormsApp1.Class.Arccos();
-           // var actual = calculator.OneCalculate(-10);
+            var calculator = new Calcpr.Class.Arccos();
             Assert.Throws<Exception>(()=> calculator.OneCalculate(-10));
         }
     }

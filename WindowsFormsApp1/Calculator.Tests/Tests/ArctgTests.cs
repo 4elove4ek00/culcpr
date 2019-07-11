@@ -12,11 +12,11 @@ namespace Calculator.Tests.Tests
         [TestCase(1, 3.14 / 4)]
         [TestCase(-1, -3.14 / 4)]
         [TestCase(0, 0)]
-        public void WindowsFormsApp1(
+        public void Calcpr(
             double FirstElement,
             double expected)
         {
-            var calculator = new WindowsFormsApp1.Class.Arctg();
+            var calculator = new Calcpr.Class.Arctg();
             var actualResult = calculator.OneCalculate(FirstElement);
             Assert.AreEqual(expected, actualResult, 0.01);
         }
