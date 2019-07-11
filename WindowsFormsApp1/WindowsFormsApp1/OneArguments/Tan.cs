@@ -10,8 +10,8 @@ namespace WindowsFormsApp1.Class
     {
         public double OneCalculate(double FirstElement)
         {
-            double result = Math.Tan(FirstElement);
-            return result;
+            if (FirstElement == 3.14 ) throw new Exception("Неизвестная ошибка");
+            return Math.Tan(FirstElement); ;
         }
     }
 }

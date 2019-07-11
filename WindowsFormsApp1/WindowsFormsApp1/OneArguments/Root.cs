@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApp1.Class
+namespace WindowsFormsApp1
 {
-    public class Arccos : IoneArgument
+    public class Root : IoneArgument
     {
         public double OneCalculate(double FirstElement)
         {
-            double result = Math.Acos(FirstElement);
-            return result;
+            if(FirstElement<0) throw new Exception("Неизвестная ошибка");
+            return Math.Sqrt(FirstElement);
         }
     }
 }

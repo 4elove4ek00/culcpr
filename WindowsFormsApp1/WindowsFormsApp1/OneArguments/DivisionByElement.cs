@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApp1
+namespace WindowsFormsApp1.Class
 {
-    public class Root : IoneArgument
+    public class DivisionByElement : IoneArgument
     {
         public double OneCalculate(double FirstElement)
         {
-            double result = Math.Sqrt(FirstElement);
+            if (FirstElement == 0) throw new Exception("Неизвестная ошибка");
+            double result = 1 / (FirstElement);
             return result;
         }
     }

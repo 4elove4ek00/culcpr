@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Class
 {
-    public class DivisionByElement : IoneArgument
+    public class Arccos : IoneArgument
     {
         public double OneCalculate(double FirstElement)
         {
-            double result = 1 / (FirstElement);
-            return result;
+            if((FirstElement < (-1)) || (FirstElement > 1)) throw new Exception("Неизвестная ошибка");
+            return Math.Acos(FirstElement);
         }
     }
 }

@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
                 double result = calculator.Calculate(firstArgument, secondArgument);
                 Conclusion.Text = result.ToString();
             }
-            catch
+            catch(FormatException exception)
             {
                 FirstElement.Text = "";
                 SecondElement.Text = "";
@@ -45,8 +45,9 @@ namespace WindowsFormsApp1
                 double result = Onecalculator.OneCalculate(firstArgument);
                 Conclusion.Text = result.ToString();
             }
-            catch
+            catch(FormatException exception)
             {
+
                 FirstElement.Text = "";
             }
         }

@@ -11,8 +11,8 @@ namespace WindowsFormsApp1.Class
     {
         public double Calculate(double FirstElement, double SecondElement)
         {
-            double result = Math.Sqrt(FirstElement*SecondElement);
-            return result;
+            if(FirstElement * SecondElement<0) throw new Exception("Неизвестная ошибка");
+            return Math.Sqrt(FirstElement * SecondElement);
         }
     }
 }

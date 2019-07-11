@@ -10,8 +10,8 @@ namespace WindowsFormsApp1
     {
         public double Calculate(double FirstElement, double SecondElement)
         {
-            double result = FirstElement / SecondElement;
-            return result;
+            if (SecondElement == 0) throw new Exception("Неизвестная ошибка");
+          return FirstElement / SecondElement;
         }
     }
 }

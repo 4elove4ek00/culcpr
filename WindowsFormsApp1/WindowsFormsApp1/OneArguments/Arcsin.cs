@@ -10,8 +10,8 @@ namespace WindowsFormsApp1.Class
     {
         public double OneCalculate(double FirstElement)
         {
-            double result = Math.Asin(FirstElement);
-            return result;
+            if ((FirstElement < (-1)) || (FirstElement > 1)) throw new Exception("Неизвестная ошибка");
+            return Math.Asin(FirstElement);
         }
     }
 }
