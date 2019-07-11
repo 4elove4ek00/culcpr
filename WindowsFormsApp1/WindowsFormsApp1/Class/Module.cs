@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Class
 {
-    class Module: IoneArgument
+    public class Module: IoneArgument
     {
         public double OneCalculate(double FirstElement)
         {

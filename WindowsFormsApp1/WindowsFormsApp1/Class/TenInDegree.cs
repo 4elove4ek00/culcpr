@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Class
 {
-    class TenInDegree : IoneArgument
+    public class TenInDegree : IoneArgument
     {
         public double OneCalculate(double FirstElement)
         {

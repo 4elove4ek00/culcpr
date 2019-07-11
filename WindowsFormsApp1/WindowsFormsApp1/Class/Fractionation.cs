@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Class
 {
-    class Fractionation: ITwoArgumentsCalculator
+    public class Fractionation: ITwoArgumentsCalculator
     {
         public double Calculate(double FirstElement, double SecondElement)
         {

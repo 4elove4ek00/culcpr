@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Class
 {
-    class Negatively :IoneArgument
+    public class Negatively :IoneArgument
     {
         public double OneCalculate(double FirstElement)
         {
