@@ -1,14 +1,9 @@
 ﻿using System;
-
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-
-
-
 using System.Windows.Forms;
+using Calculater.OneArgument;
+using Calculater.TwoArguments;
 
-namespace Calcpr
+namespace Calculater
 {
     public partial class Form1 : Form
     {
@@ -18,21 +13,20 @@ namespace Calcpr
 
         }
 
-
         void Calculator(object sender, EventArgs e)
         {
             try
             {
-                double firstArgument = Convert.ToDouble(FirstElement.Text);
-                double secondArgument = Convert.ToDouble(SecondElement.Text);
+                double firstArgument = Convert.ToDouble(firstElement.Text);
+                double secondArgument = Convert.ToDouble(secondElement.Text);
                 ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button) sender).Name);
                 double result = calculator.Calculate(firstArgument, secondArgument);
                 Conclusion.Text = result.ToString();
             }
             catch (FormatException exception)
             {
-                FirstElement.Text = "";
-                SecondElement.Text = "";
+                firstElement.Text = "";
+                secondElement.Text = "";
             }
             catch (Exception exception)
             {
@@ -44,15 +38,15 @@ namespace Calcpr
         {
             try
             {
-                double firstArgument = Convert.ToDouble(FirstElement.Text);
-                IoneArgument Onecalculator = OneArgumentsFactory.CreateCalculator(((Button)sender).Name);
-                double result = Onecalculator.OneCalculate(firstArgument);
+                double firstArgument = Convert.ToDouble(firstElement.Text);
+                IOneArgument oneCalculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
+                double result = oneCalculator.OneCalculate(firstArgument);
                 Conclusion.Text = result.ToString();
             }
             catch(FormatException exception)
             {
 
-                FirstElement.Text = "";
+                firstElement.Text = "";
             }
             catch (Exception exception)
             {
@@ -62,37 +56,6 @@ namespace Calcpr
 
         private void Form1_Load(object sender, EventArgs e)
         {
-        }
-
-        private void Addition_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Division_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Substraction_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Multiplication_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void SecondElement_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Conclusion_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void label1_Click(object sender, EventArgs e)

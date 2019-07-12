@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Calculater.OneArgument;
+using NUnit.Framework;
 
 namespace Calculator.Tests.Tests
 
@@ -9,7 +10,7 @@ namespace Calculator.Tests.Tests
         [Test]
         public void Calcpr()
         {
-            var calculator = new Calcpr.Squring();
+            var calculator = new Squring();
             var actual = calculator.OneCalculate(9);
             Assert.AreEqual(81, actual);
         }

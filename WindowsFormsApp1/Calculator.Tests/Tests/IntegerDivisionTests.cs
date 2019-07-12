@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Calculater.TwoArguments;
+using NUnit.Framework;
 
 namespace Calculator.Tests.Tests
 {
@@ -8,12 +9,12 @@ namespace Calculator.Tests.Tests
         [TestCase(26, 5, 5)]
         [TestCase(50, 7, 7)]
         public void Calcpr(
-            double FirstElement,
-            double SecondElement,
+            double firstElement,
+            double secondElement,
             double expected)
         {
-            var calculator = new Calcpr.Class.IntegerDivision();
-            var actualResult = calculator.Calculate(FirstElement, SecondElement);
+            var calculator = new IntegerDivision();
+            var actualResult = calculator.Calculate(firstElement, secondElement);
             Assert.AreEqual(expected, actualResult, 0.01);
         }
     }

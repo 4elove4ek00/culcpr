@@ -1,10 +1,7 @@
 ﻿using System;
-
-
-
 using System.Windows.Forms;
 
-namespace Calcpr
+namespace Calculater
 {
     static class Program
     {

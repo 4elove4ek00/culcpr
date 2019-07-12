@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Calculater.TwoArguments;
+using NUnit.Framework;
 
 namespace Calculator.Tests.Tests
 {
@@ -9,12 +10,12 @@ namespace Calculator.Tests.Tests
         [TestCase(90, 30, 90)]
         [TestCase(10, 40, 40)]
         public void Calcpr(
-            double FirstElement,
-            double SecondElement,
+            double firstElement,
+            double secondElement,
             double expected)
         {
-            var calculator = new Calcpr.Class.Max();
-            var actualResult = calculator.Calculate(FirstElement, SecondElement);
+            var calculator = new Max();
+            var actualResult = calculator.Calculate(firstElement, secondElement);
             Assert.AreEqual(expected, actualResult);
         }
     }

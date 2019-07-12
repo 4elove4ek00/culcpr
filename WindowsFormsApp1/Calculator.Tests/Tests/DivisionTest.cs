@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Calculater.TwoArguments;
+using NUnit.Framework;
 
 namespace Calculator.Tests.Tests
 
@@ -9,7 +10,7 @@ namespace Calculator.Tests.Tests
         [Test]
         public void Calcpr()
         {
-            var calculator = new Calcpr.Division();
+            var calculator = new Division();
             var actual = calculator.Calculate(9, 3);
             Assert.AreEqual(3, actual);
         }

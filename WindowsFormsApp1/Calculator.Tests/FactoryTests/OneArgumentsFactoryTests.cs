@@ -1,6 +1,6 @@
 ﻿using System;
-using Calcpr;
-using Calcpr.Class;
+using Calculater.OneArgument;
+using Calculater.TwoArguments;
 using NUnit.Framework;
 
 namespace Calculator.Tests.FactoryTests
@@ -24,7 +24,7 @@ namespace Calculator.Tests.FactoryTests
             string name,
             Type type)
         {
-            var actualResult = OneArgumentsFactory.CreateCalculator(name);
+            var actualResult = OneArgumentFactory.CreateCalculator(name);
             Assert.IsInstanceOf(type, actualResult);
         }
     }

@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Calculater.OneArgument;
+using NUnit.Framework;
 
 namespace Calculator.Tests.Tests
 {
@@ -8,11 +9,11 @@ namespace Calculator.Tests.Tests
         [TestCase(-1, -0.84)]
         [TestCase(0, 0)]
         public void Calcpr(
-            double FirstElement,
+            double firstElement,
             double expected)
         {
-            var calculator = new Calcpr.Class.Sin();
-            var actualResult = calculator.OneCalculate(FirstElement);
+            var calculator = new Sin();
+            var actualResult = calculator.OneCalculate(firstElement);
             Assert.AreEqual(expected, actualResult, 0.01);
         }
     }

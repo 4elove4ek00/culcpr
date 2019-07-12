@@ -1,4 +1,4 @@
-﻿namespace Calcpr
+﻿namespace Calculater
 {
     partial class Form1
     {
@@ -33,8 +33,8 @@
             this.Addition = new System.Windows.Forms.Button();
             this.Subtraction = new System.Windows.Forms.Button();
             this.Conclusion = new System.Windows.Forms.Label();
-            this.FirstElement = new System.Windows.Forms.TextBox();
-            this.SecondElement = new System.Windows.Forms.TextBox();
+            this.firstElement = new System.Windows.Forms.TextBox();
+            this.secondElement = new System.Windows.Forms.TextBox();
             this.squaring = new System.Windows.Forms.Button();
             this.root = new System.Windows.Forms.Button();
             this.sin = new System.Windows.Forms.Button();
@@ -114,23 +114,22 @@
             this.Conclusion.Size = new System.Drawing.Size(20, 23);
             this.Conclusion.TabIndex = 4;
             this.Conclusion.Text = "0";
-            this.Conclusion.Click += new System.EventHandler(this.Conclusion_Click);
             // 
-            // FirstElement
+            // firstElement
             // 
-            this.FirstElement.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FirstElement.Location = new System.Drawing.Point(18, 24);
-            this.FirstElement.Name = "FirstElement";
-            this.FirstElement.Size = new System.Drawing.Size(100, 30);
-            this.FirstElement.TabIndex = 5;
+            this.firstElement.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.firstElement.Location = new System.Drawing.Point(18, 24);
+            this.firstElement.Name = "firstElement";
+            this.firstElement.Size = new System.Drawing.Size(100, 30);
+            this.firstElement.TabIndex = 5;
             // 
-            // SecondElement
+            // secondElement
             // 
-            this.SecondElement.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SecondElement.Location = new System.Drawing.Point(139, 24);
-            this.SecondElement.Name = "SecondElement";
-            this.SecondElement.Size = new System.Drawing.Size(100, 30);
-            this.SecondElement.TabIndex = 6;
+            this.secondElement.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.secondElement.Location = new System.Drawing.Point(139, 24);
+            this.secondElement.Name = "secondElement";
+            this.secondElement.Size = new System.Drawing.Size(100, 30);
+            this.secondElement.TabIndex = 6;
             // 
             // squaring
             // 
@@ -395,7 +394,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(458, 329);
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(456, 322);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.IntegerDivision);
             this.Controls.Add(this.log);
@@ -419,16 +420,17 @@
             this.Controls.Add(this.sin);
             this.Controls.Add(this.root);
             this.Controls.Add(this.squaring);
-            this.Controls.Add(this.SecondElement);
-            this.Controls.Add(this.FirstElement);
+            this.Controls.Add(this.secondElement);
+            this.Controls.Add(this.firstElement);
             this.Controls.Add(this.Conclusion);
             this.Controls.Add(this.Subtraction);
             this.Controls.Add(this.Addition);
             this.Controls.Add(this.Division);
             this.Controls.Add(this.Multiplication);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.Text = "Calculator";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.OneCalculator);
             this.ResumeLayout(false);
@@ -443,8 +445,8 @@
         private System.Windows.Forms.Button Addition;
         private System.Windows.Forms.Button Subtraction;
         private System.Windows.Forms.Label Conclusion;
-        private System.Windows.Forms.TextBox FirstElement;
-        private System.Windows.Forms.TextBox SecondElement;
+        private System.Windows.Forms.TextBox firstElement;
+        private System.Windows.Forms.TextBox secondElement;
         private System.Windows.Forms.Button squaring;
         private System.Windows.Forms.Button root;
         private System.Windows.Forms.Button sin;

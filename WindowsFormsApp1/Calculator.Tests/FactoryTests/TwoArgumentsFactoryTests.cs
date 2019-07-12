@@ -1,7 +1,6 @@
 ﻿
 using System;
-using Calcpr;
-using Calcpr.Class;
+using Calculater.TwoArguments;
 using NUnit.Framework;
 
 namespace Calculator.Tests.FactoryTests
