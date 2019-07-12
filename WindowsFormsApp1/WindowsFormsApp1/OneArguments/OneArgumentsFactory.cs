@@ -8,7 +8,7 @@ namespace Calcpr
         /// <summary>
         /// factory for working with one argument
         /// </summary>
-        /// <param name="sender">It`s name key </param>
+        /// <param name="sender">It`s name keys </param>
         /// <returns></returns>
         public static IoneArgument CreateCalculator(string sender)
         {

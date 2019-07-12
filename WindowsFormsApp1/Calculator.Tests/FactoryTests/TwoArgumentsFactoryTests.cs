@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System;
 using Calcpr;
 using Calcpr.Class;
 using NUnit.Framework;
 
 namespace Calculator.Tests.FactoryTests
 {
-   public class TwoArgumentsFactoryTests
+    public class TwoArgumentsFactoryTests
     {
         [TestCase("Addition", typeof(Addition))]
         [TestCase("Division", typeof(Division))]

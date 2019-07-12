@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace Calculator.Tests.Tests
 {
     [TestFixture]
     public class MaxTests
     {
-        [TestCase(60,30,60)]
-        [TestCase(90, 30,90)]
-        [TestCase(10, 40,40)]
+        [TestCase(60, 30, 60)]
+        [TestCase(90, 30, 90)]
+        [TestCase(10, 40, 40)]
         public void Calcpr(
             double FirstElement,
             double SecondElement,

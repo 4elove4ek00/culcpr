@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace Calculator.Tests.Tests
 {
@@ -14,8 +9,7 @@ namespace Calculator.Tests.Tests
         [TestCase(25, 25)]
         public void Calcpr(
             double FirstElement,
-            //double SecondElement,
-            double expected)
+           double expected)
         {
             var calculator = new Calcpr.Class.Module();
             var actualResult = calculator.OneCalculate(FirstElement);
