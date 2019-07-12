@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Calcpr.Class;
 
 namespace Calcpr
 {
-   
     public class OneArgumentsFactory
     {
         /// <summary>
         /// factory for working with one argument
         /// </summary>
-        /// <param name="name"></param>
+        /// <param name="sender">It`s name key </param>
         /// <returns></returns>
         public static IoneArgument CreateCalculator(string sender)
         {
@@ -21,38 +16,27 @@ namespace Calcpr
             {
                 case "root":
                     return new Root();
-                case
-                    "squaring":
+                case "squaring":
                     return new Squring();
-                case
-                    "sin":
+                case "sin":
                     return new Sin();
-                case
-                    "cos":
+                case "cos":
                     return new Cos();
-                case
-                    "tan":
+                case "tan":
                     return new Tan();
-                case
-                    "ln":
+                case "ln":
                     return new Ln();
-                case
-                    "divisionByElement":
+                case "divisionByElement":
                     return new DivisionByElement();
-                case
-                    "tenInDegree":
+                case "tenInDegree":
                     return new TenInDegree();
-                case
-                    "module":
+                case "module":
                     return new Module();
-                case
-                    "arcsin":
+                case "arcsin":
                     return new Arcsin();
-                case
-                    "arccos":
+                case "arccos":
                     return new Arccos();
-                case
-                    "arctg":
+                case "arctg":
                     return new Arctg();
                 case "negatively":
                     return new Negatively();

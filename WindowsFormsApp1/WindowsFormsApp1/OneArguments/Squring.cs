@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Calcpr
 {
     public class Squring : IoneArgument
@@ -11,7 +6,7 @@ namespace Calcpr
         /// <summary>
         /// this method squaring argument
         /// </summary>
-        /// <param name="firstValue"></param>
+        /// <param name="FirstElement"></param>
         /// <returns></returns>
         public double OneCalculate(double FirstElement)
         {

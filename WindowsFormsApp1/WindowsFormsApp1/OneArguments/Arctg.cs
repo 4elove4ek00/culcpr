@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Calcpr.Class
 {
     public class Arctg : IoneArgument
@@ -11,7 +6,7 @@ namespace Calcpr.Class
         /// <summary>
         /// this method Arctan argument
         /// </summary>
-        /// <param name="firstValue"></param>
+        /// <param name="FirstElement">It`s first element </param>
         /// <returns></returns>
         public double OneCalculate(double FirstElement)
         {

@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+
+
+
 
 namespace Calcpr
 {
@@ -11,7 +11,7 @@ namespace Calcpr
         /// <summary>
         /// this method find square root of argument
         /// </summary>
-        /// <param name="firstValue"></param>
+        /// <param name="FirstElement"></param>
         /// <returns></returns>
         public double OneCalculate(double FirstElement)
         {

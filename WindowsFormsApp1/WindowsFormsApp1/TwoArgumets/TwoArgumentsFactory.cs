@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Calcpr.Class;
 
 namespace Calcpr
 {
-    
     public class TwoArgumentsFactory
     {
         /// <summary>
         /// factory for working with two arguments
         /// </summary>
-        /// <param name="name"></param>
+        /// <param name="sender">It`s name key</param>
         /// <returns></returns>
         public static ITwoArgumentsCalculator CreateCalculator(string sender)
         {
@@ -21,29 +16,21 @@ namespace Calcpr
             {
                 case "Addition":
                     return new Addition();
-                case
-                    "Division":
+                case "Division":
                     return new Division();
-                case
-                    "Multiplication":
+                case "Multiplication":
                     return new Multiplication();
-                case
-                    "Subtraction":
+                case "Subtraction":
                     return new Subtraction();
-                case
-                    "Average":
+                case "Average":
                     return new Average();
-                case
-                    "Remainder":
+                case "Remainder":
                     return new Remainder();
-                case
-                    "fractionation":
+                case "fractionation":
                     return new Fractionation();
-                case
-                    "max":
+                case "max":
                     return new Max();
-                case
-                    "min":
+                case "min":
                     return new Min();
                 case "geometricMean":
                     return new GeometricMean();
