@@ -65,7 +65,7 @@
     <Compile Include="TwoArguments\Remainder.cs" />
     <Compile Include="OneArgument\Sin.cs" />
     <Compile Include="OneArgument\Tan.cs" />
-    <Compile Include="TwoArguments\TenInDegree.cs" />
+    <Compile Include="OneArgument\TenInDegree.cs" />
     <Compile Include="OneArgument\IoneArgument.cs" />
     <Compile Include="OneArgument\OneArgumentFactory.cs" />
     <Compile Include="OneArgument\Root.cs" />
